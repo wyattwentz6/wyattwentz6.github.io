@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <title>About</title>
+</head>
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn"
+        onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <img src="e30.gif" width="212" height="98">
+      </div>
+    
+      <div id="main">
+        <h2>Wyatt Wentz</h2>
+        <p>About</p>
+        <span style="font-size:30px;cursor:pointer"
+        onclick="openNav()">&#9776; open</span>
+      </div>
+    
+      <script>
+        function openNav(){
+          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+        }
+    
+        function closeNav(){
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft = "0";
+        }
+      </script> 
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Wyatt Wentz - Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="style1.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn"
+    onclick="closeNav()">&times;</a>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <img src="e30.gif" width="212" height="98">
+
+  </div>
+
+  <!-- stores the open function -->
+
+  <div id="main">
+    <span style="font-size:30px;cursor:pointer"
+    onclick="openNav()">&#9776; open</span>
+  </div>
+
+  <div id="mainText">
+    <h1>Hello,</h1>
+    <p>I'm Wyatt Wentz. 
+      I'm currently studying Computer Science. <br>Computers and cars 
+      have always been two things I've loved.<br>
+    </p>
+  </div>
+
+  <div id="resumebtn">
+    <a href="resume.pdf" download>
+      Resume
+    </a>
+  </div>
+
+
+  <script>
+    /* Function that opens the side nav bar */
+    function openNav(){
+      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+
+    /* Function that closes the side nav bar */
+    function closeNav(){
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginLeft = "0";
+    }
+  </script>
+</body>
+</html>
